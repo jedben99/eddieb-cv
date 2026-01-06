@@ -1,4 +1,32 @@
+import type { Metadata } from "next"
 import { contact, skills, allSkills, experience, education, languages, aiSection } from "@/data"
+import { calculateYearsOfExperience } from "@/utils/experience"
+import { BASE_URL } from "@/data/constants"
+
+const yearsOfExperience = calculateYearsOfExperience(experience)
+
+export async function generateMetadata(): Promise<Metadata> {
+  const title = `${contact.name} | ${contact.title}`
+  const description = `${yearsOfExperience}+ years of experience building scalable web applications. ${contact.title} specializing in React, Next.js, Angular, .NET, and AI-powered development. Based in ${contact.location}.`
+  
+  return {
+    title,
+    description,
+    openGraph: {
+      title,
+      description,
+      url: BASE_URL,
+      siteName: contact.name,
+      locale: 'en_US',
+      type: 'website',
+    },
+    twitter: {
+      card: 'summary',
+      title,
+      description,
+    },
+  }
+}
 
 export default function Home() {
   const languagesText = languages.map(lang => `${lang.name} (${lang.proficiency})`).join(', ')
