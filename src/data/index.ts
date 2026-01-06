@@ -1,0 +1,6 @@
+export { contact } from "./contact"
+export { skills, allSkills } from "./skills"
+export { experience } from "./experience"
+export { education } from "./education"
+export { languages } from "./languages"
+export { aiSection } from "./aiTools"
