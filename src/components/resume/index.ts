@@ -1,0 +1,7 @@
+export { Header } from "./Header"
+export { Contact } from "./Contact"
+export { Skills } from "./Skills"
+export { AIReady } from "./AIReady"
+export { Languages } from "./Languages"
+export { Experience } from "./Experience"
+export { Education } from "./Education"
