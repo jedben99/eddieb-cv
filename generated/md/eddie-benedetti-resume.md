@@ -6,7 +6,7 @@ Software Engineer
 **Email:** jedben99@gmail.com  
 **Phone:** 813.300.2538  
 
-**Online Resume:** This resume is also available online where it is regularly updated with the latest information and additional details about my work.
+**Online Resume:** This resume is also available online at https://www.eddieb.cv where it is regularly updated with the latest information and additional details about my work.
 
 ---
 

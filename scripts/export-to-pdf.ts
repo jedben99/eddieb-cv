@@ -2,6 +2,7 @@ import { writeFile, mkdir } from 'fs/promises'
 import { existsSync } from 'fs'
 import { join } from 'path'
 import { contact, skills, allSkills, experience, education, languages, aiSection } from '../src/data'
+import { RESUME_URL } from '../src/data/constants'
 
 function formatExperience(exp: typeof experience[0]): string {
   let markdown = `### ${exp.role} at ${exp.company}\n\n`
@@ -30,7 +31,7 @@ function formatResumeToMarkdown(): string {
   markdown += `**Email:** ${contact.email}  \n`
   markdown += `**Phone:** ${contact.phone}  \n\n`
   
-  markdown += `**Online Resume:** This resume is also available online where it is regularly updated with the latest information and additional details about my work.\n\n`
+  markdown += `**Online Resume:** This resume is also available online at ${RESUME_URL} where it is regularly updated with the latest information and additional details about my work.\n\n`
   
   markdown += `---\n\n`
   markdown += `## Summary\n\n`
