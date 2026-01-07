@@ -2,7 +2,8 @@ import type { Metadata } from "next"
 import { contact, skills, allSkills, experience, education, languages, aiSection } from "@/data"
 import { calculateYearsOfExperience } from "@/utils/experience"
 import { BASE_URL } from "@/data/constants"
-import { ChatGPTButton } from "@/components/ChatGPTButton"
+import { LLMDropdown } from "@/components/LLMDropdown"
+import { DownloadButton } from "@/components/DownloadButton"
 
 const yearsOfExperience = calculateYearsOfExperience(experience)
 
@@ -68,7 +69,10 @@ export default function Home() {
                   <p className="mt-3 text-sm font-medium uppercase tracking-wider text-neutral-600 dark:text-neutral-400">
                     {contact.title}
                   </p>
-                  <ChatGPTButton />
+                  <div className="mt-4 flex items-center gap-2">
+                    <DownloadButton />
+                    <LLMDropdown />
+                  </div>
                 </div>
 
                 {/* Contact */}

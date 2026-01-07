@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export:pdf": "tsx scripts/export-to-pdf.ts",
+    "export:pdf-only": "npx md-to-pdf generated/md/*.md --pdf-out public/generated/pdf"
   },
   "dependencies": {
     "next": "16.1.0",
@@ -20,7 +22,9 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.0",
+    "md-to-pdf": "^5.2.5",
     "tailwindcss": "^4",
+    "tsx": "^4.21.0",
     "typescript": "^5"
   }
 }
