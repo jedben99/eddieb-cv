@@ -110,10 +110,12 @@ async function generatePDFs(mdDir: string, pdfDir: string, filename: string) {
     
     try {
       console.log(`  Converting ${filename} to PDF...`)
+      const stylesheetPath = join(__dirname, 'pdf-styles.css')
       const pdf = await mdToPdf(
         { path: inputPath },
         { 
           dest: outputPath,
+          stylesheet: stylesheetPath,
           pdf_options: {
             format: 'A4',
             margin: { top: '20mm', right: '15mm', bottom: '20mm', left: '15mm' },

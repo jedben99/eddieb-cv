@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "export:pdf": "tsx scripts/export-to-pdf.ts",
-    "export:pdf-only": "npx md-to-pdf generated/md/*.md --pdf-out public/generated/pdf"
+    "export:pdf-only": "npx md-to-pdf generated/md/*.md --pdf-out public/generated/pdf",
+    "export:cover-letter": "tsx scripts/export-cover-letter.ts",
+    "export:cover-letter:custom": "tsx scripts/export-cover-letter.ts eddie-benedetti-cover-letter-custom.md"
   },
   "dependencies": {
     "next": "16.1.0",

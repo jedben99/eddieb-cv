@@ -1,3 +1,3 @@
 // Update this with your actual domain when deploying
 export const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000'
-export const RESUME_URL = 'https://www.eddieb.cv'
+export const RESUME_URL = 'https://www.eddieb.dev'
