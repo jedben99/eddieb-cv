@@ -74,7 +74,7 @@ Software Engineer with extensive experience building scalable web applications. 
 
 ## Skills & Capabilities
 
-JavaScript, TypeScript, HTML, CSS, React, Next.js, Redux, AngularJS, Angular, .NET, C#, Git, Agile, jQuery, Node.js, Express, SQL Server, MongoDB, Sass, ASP.NET, Visual Basic, FoxPro, Bootstrap, Angular Material, Socket.IO, NPM, SQL, Entity Framework, Styled Components, AWS, S3, Figma
+JavaScript, TypeScript, React, Next.js, Angular, AngularJS, C#, .NET, Node.js, Express, ASP.NET, SQL Server, MongoDB, AWS, Git, Agile, HTML, CSS, Styled Components, Sass, jQuery
 
 ---
 

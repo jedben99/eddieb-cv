@@ -1,7 +1,7 @@
 import { writeFile, mkdir } from 'fs/promises'
 import { existsSync } from 'fs'
 import { join } from 'path'
-import { contact, skills, allSkills, experience, education, languages, aiSection } from '../src/data'
+import { contact, skills, experience, education, languages, aiSection } from '../src/data'
 import { RESUME_URL } from '../src/data/constants'
 
 function formatExperience(exp: typeof experience[0]): string {
@@ -47,7 +47,7 @@ function formatResumeToMarkdown(): string {
   
   markdown += `---\n\n`
   markdown += `## Skills & Capabilities\n\n`
-  markdown += `${allSkills.join(', ')}\n\n`
+  markdown += `${skills.join(', ')}\n\n`
   
   markdown += `---\n\n`
   markdown += `## AI-Powered Development\n\n`
@@ -118,7 +118,7 @@ async function generatePDFs(mdDir: string, pdfDir: string, filename: string) {
           stylesheet: stylesheetPath,
           pdf_options: {
             format: 'A4',
-            margin: { top: '20mm', right: '15mm', bottom: '20mm', left: '15mm' },
+            margin: { top: '28mm', right: '15mm', bottom: '20mm', left: '15mm' },
             printBackground: true,
           },
           launch_options: {
